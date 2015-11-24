@@ -1491,7 +1491,7 @@ public class PackageManagerService implements PackageSender, TestUtilityService 
         }
 
         PackageManagerService m = new PackageManagerService(injector, onlyCore, factoryTest,
-                PackagePartitions.FINGERPRINT, Build.IS_ENG, Build.IS_USERDEBUG,
+                Build.BENZO_VERSION, Build.IS_ENG, Build.IS_USERDEBUG,
                 Build.VERSION.SDK_INT, Build.VERSION.INCREMENTAL);
         t.traceEnd(); // "create package manager"
 
@@ -1955,7 +1955,7 @@ public class PackageManagerService implements PackageSender, TestUtilityService 
                     !buildFingerprint.equals(ver.fingerprint);
             if (mIsUpgrade) {
                 PackageManagerServiceUtils.logCriticalInfo(Log.INFO, "Upgrading from "
-                        + ver.fingerprint + " to " + PackagePartitions.FINGERPRINT);
+                        + ver.fingerprint + " to " + Build.BENZO_VERSION);
             }
 
             // when upgrading from pre-M, promote system app permissions from install to runtime
@@ -2067,7 +2067,7 @@ public class PackageManagerService implements PackageSender, TestUtilityService 
             // this situation.
             if (mIsUpgrade) {
                 Slog.i(TAG, "Build fingerprint changed from " + ver.fingerprint + " to "
-                        + PackagePartitions.FINGERPRINT
+                        + Build.BENZO_VERSION
                         + "; regranting permissions for internal storage");
             }
             mPermissionManager.onStorageVolumeMounted(
@@ -2089,7 +2089,7 @@ public class PackageManagerService implements PackageSender, TestUtilityService 
             // across OTAs and are used to drive profile verification (post OTA) and
             // profile compilation (without waiting to collect a fresh set of profiles).
             if (mIsUpgrade && !mOnlyCore) {
-                Slog.i(TAG, "Build fingerprint changed; clearing code caches");
+                Slog.i(TAG, "Build version changed; clearing code caches");
                 for (int i = 0; i < packageSettings.size(); i++) {
                     final PackageSetting ps = packageSettings.valueAt(i);
                     if (Objects.equals(StorageManager.UUID_PRIVATE_INTERNAL, ps.getVolumeUuid())) {
@@ -2100,7 +2100,7 @@ public class PackageManagerService implements PackageSender, TestUtilityService 
                                         | Installer.FLAG_CLEAR_APP_DATA_KEEP_ART_PROFILES);
                     }
                 }
-                ver.fingerprint = PackagePartitions.FINGERPRINT;
+                ver.fingerprint = Build.BENZO_VERSION;
             }
 
             // Defer the app data fixup until we are done with app data clearing above.
