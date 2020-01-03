@@ -3857,6 +3857,9 @@
   <java-symbol type="bool" name="reset_geo_fencing_check_after_boot_or_apm" />
 =======
 
+<<<<<<< HEAD
   <java-symbol type="integer" name="config_flashlightProximityTimeout" />
 >>>>>>> b947282dfb6... Power button flashlight toggle: add proximity sensor check
+=======
+>>>>>>> a59fe1a4181... Power button flashlight toggle: rely on aosp doze sensors check code
 </resources>

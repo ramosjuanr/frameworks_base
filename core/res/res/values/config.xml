@@ -4262,6 +4262,7 @@
          create additional screen real estate outside beyond the keyboard. Note that the user needs
          to have a confirmed way to dismiss the keyboard when desired. -->
     <bool name="config_automotiveHideNavBarForKeyboard">false</bool>
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     <!-- Component name that accepts ACTION_SEND intents for nearby (proximity-based) sharing.
@@ -4274,4 +4275,6 @@
 =======
     <integer name="config_flashlightProximityTimeout">300</integer>
 >>>>>>> b947282dfb6... Power button flashlight toggle: add proximity sensor check
+=======
+>>>>>>> a59fe1a4181... Power button flashlight toggle: rely on aosp doze sensors check code
 </resources>
