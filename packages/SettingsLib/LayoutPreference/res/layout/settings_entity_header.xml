@@ -35,8 +35,8 @@
 
         <ImageView
             android:id="@+id/entity_header_icon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
             android:scaleType="fitCenter"
             android:antialias="true"/>
 
