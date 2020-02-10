@@ -75,6 +75,27 @@
     <alias name="fantasy" to="serif" />
     <alias name="ITC Stone Serif" to="serif" />
 
+    <family name="googlesans">
+        <font weight="450" style="normal">GoogleSans-Regular.ttf</font>
+        <font weight="450" style="italic">GoogleSans-Italic.ttf</font>
+        <font weight="550" style="normal">GoogleSans-Medium.ttf</font>
+        <font weight="550" style="italic">GoogleSans-MediumItalic.ttf</font>
+        <font weight="750" style="normal">GoogleSans-Bold.ttf</font>
+        <font weight="750" style="italic">GoogleSans-BoldItalic.ttf</font>
+    </family>
+
+    <alias name="googlesans-medium" to="googlesans" weight="550" />
+    <alias name="googlesans-semi-bold" to="googlesans" weight="650" />
+    <alias name="googlesans-bold" to="googlesans" weight="750" />
+    <alias name="times" to="googlesans" />
+    <alias name="times new roman" to="googlesans" />
+    <alias name="palatino" to="googlesans" />
+    <alias name="georgia" to="googlesans" />
+    <alias name="baskerville" to="googlesans" />
+    <alias name="goudy" to="googlesans" />
+    <alias name="fantasy" to="googlesans" />
+    <alias name="ITC Stone Serif" to="googlesans" />
+
     <family name="monospace">
         <font weight="400" style="normal">DroidSansMono.ttf</font>
     </family>
