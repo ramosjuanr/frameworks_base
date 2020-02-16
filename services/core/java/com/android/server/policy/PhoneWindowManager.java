@@ -2029,7 +2029,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                         mWindowManagerFuncs.onKeyguardShowingAndNotOccludedChanged();
                     }
                 });
-
+    }
     /**
      * Read values from config.xml that may be overridden depending on
      * the configuration of the device.
