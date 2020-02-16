@@ -624,6 +624,14 @@ public final class DefaultPermissionGrantPolicy {
         grantPermissionsToPackage(browserPackage, userId, false /* ignoreSystemPackage */,
                 true /*whitelistRestrictedPermissions*/, ALWAYS_LOCATION_PERMISSIONS);
 
+	// Chrome
+        String chromePackage = "org.chromium.chrome";
+        PackageInfo pkg = getPackageInfo(chromePackage);
+        if (pkg != null) {
+            grantPermissionsToPackage(chromePackage, userId, false /* ignoreSystemPackage */,
+                    true /*whitelistRestrictedPermissions*/, CONTACTS_PERMISSIONS, STORAGE_PERMISSIONS);
+        }
+
         // Wellbeing
         String WellbeingPackageName = "com.google.android.apps.wellbeing";
         if (mWellbeingInstalled(WellbeingPackageName) != false) {
