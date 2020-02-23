@@ -796,13 +796,6 @@ public final class DefaultPermissionGrantPolicy {
         // Carrier Setup
         grantSystemFixedPermissionsToSystemPackage("com.google.android.carriersetup", userId, PHONE_PERMISSIONS,
                 SMS_PERMISSIONS);
-
-        // ThemePicker
-        String themePickerPackage = "com.android.wallpaper";
-        PackageInfo pkg = getPackageInfo(themePickerPackage);
-        if (pkg != null) {
-            grantPermissionsToPackage(themePickerPackage, userId, false /* ignoreSystemPackage */,
-                    true /*whitelistRestrictedPermissions*/, STORAGE_PERMISSIONS);
         }
 
 	// Google App
