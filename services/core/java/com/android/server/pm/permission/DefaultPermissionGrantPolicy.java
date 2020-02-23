@@ -796,7 +796,6 @@ public final class DefaultPermissionGrantPolicy {
         // Carrier Setup
         grantSystemFixedPermissionsToSystemPackage("com.google.android.carriersetup", userId, PHONE_PERMISSIONS,
                 SMS_PERMISSIONS);
-        }
 
 	// Google App
         grantSystemFixedPermissionsToSystemPackage("com.google.android.googlequicksearchbox", userId,
