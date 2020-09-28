@@ -13358,6 +13358,18 @@ public final class Settings {
                 "power_button_very_long_press";
 
         /**
+         * Show overlay of CPU core speeds
+         * @hide
+         */
+        public static final String SHOW_CPU_OVERLAY = "show_cpu_overlay";
+
+        /**
+         * Google Hybrid Battery Warnings
+         * @hide
+         */
+        public static final String HYBRID_SYSUI_BATTERY_WARNING_FLAGS = "hybrid_sysui_battery_warning_flags";
+
+        /**
          * Global settings that shouldn't be persisted.
          *
          * @hide
