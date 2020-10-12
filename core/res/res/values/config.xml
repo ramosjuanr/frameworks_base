@@ -3430,7 +3430,7 @@
     <string name="config_deviceProvisioningPackage"></string>
 
     <!-- Colon separated list of package names that should be granted DND access -->
-    <string name="config_defaultDndAccessPackages" translatable="false">com.android.camera2</string>
+    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.gms:com.google.android.GoogleCamera:com.google.intelligence.sense:com.android.settings.intelligence</string>
 
     <!-- User restrictions set when the first user is created.
          Note: Also update appropriate overlay files. -->
