@@ -1957,10 +1957,10 @@
     <bool name="config_mms_content_disposition_support">true</bool>
 
     <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false"></string>
+    <string name="config_mms_user_agent" translatable="false">g011c</string>
 
     <!-- MMS user agent prolfile url -->
-    <string name="config_mms_user_agent_profile_url" translatable="false"></string>
+    <string name="config_mms_user_agent_profile_url" translatable="false">http://www.gstatic.com/android/sms/G011C.xml</string>
 
     <!-- National Language Identifier codes for the following two config items.
          (from 3GPP TS 23.038 V9.1.1 Table 6.2.1.2.4.1):
@@ -3501,7 +3501,7 @@
     <bool name="config_allow3rdPartyAppOnInternal">true</bool>
 
     <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
-    <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
+    <string name="config_icon_mask" translatable="false">"M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"</string>
 
     <!-- The component name, flattened to a string, for the default accessibility service to be
          enabled by the accessibility shortcut. This service must be trusted, as it can be activated
