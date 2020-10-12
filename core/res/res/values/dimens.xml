@@ -86,13 +86,13 @@
     <dimen name="status_bar_edge_ignore">5dp</dimen>
 
     <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">0dp</dimen>
+    <dimen name="rounded_corner_radius">8dp</dimen>
     <!-- Radius of the software rounded corners at the top of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">0dp</dimen>
+    <dimen name="rounded_corner_radius_top">8dp</dimen>
     <!-- Radius of the software rounded corners at the bottom of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">0dp</dimen>
+    <dimen name="rounded_corner_radius_bottom">8dp</dimen>
 
     <!-- Default adjustment for the software rounded corners since corners are not perfectly
         round. This value is used when retrieving the "radius" of the rounded corner in cases
@@ -650,7 +650,7 @@
     <!-- Top/bottom padding of the tooltip text. -->
     <dimen name="tooltip_vertical_padding">6.5dp</dimen>
     <!-- Border corner radius of the tooltip window. -->
-    <dimen name="tooltip_corner_radius">2dp</dimen>
+    <dimen name="tooltip_corner_radius">8dp</dimen>
     <!-- View with the height equal or above this threshold will have a tooltip anchored
     to the mouse/touch position -->
     <dimen name="tooltip_precise_anchor_threshold">96dp</dimen>
@@ -782,7 +782,7 @@
     <dimen name="slice_padding">16dp</dimen>
 
     <!-- Default dialog corner radius -->
-    <dimen name="dialog_corner_radius">2dp</dimen>
+    <dimen name="dialog_corner_radius">8dp</dimen>
 
     <!-- Size of thumbnail used in the cross profile apps animation -->
     <dimen name="cross_profile_apps_thumbnail_size">72dp</dimen>
