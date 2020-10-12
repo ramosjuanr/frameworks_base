@@ -1181,7 +1181,7 @@
 
     <!-- The app which will handle routine based automatic battery saver, if empty the UI for
          routine based battery saver will be hidden -->
-    <string name="config_batterySaverScheduleProvider"></string>
+    <string name="config_batterySaverScheduleProvider">com.google.android.apps.turbo</string>
 
     <!-- Close low battery warning when battery level reaches the lowBatteryWarningLevel
          plus this -->
@@ -1605,7 +1605,7 @@
          that has been granted the PACKAGE_EPHEMERAL_AGENT permission.
          This may be empty if ephemeral apps are not supported. -->
     <string-array name="config_ephemeralResolverPackage" translatable="false">
-        <!-- Add packages here -->
+    	<item>com.google.android.gms</item>
     </string-array>
 
     <!-- The set of system packages on device that are queryable by any app regardless of the
@@ -1763,7 +1763,7 @@
 
          This must be set to a valid network recommendation app or empty.
      -->
-    <string name="config_defaultNetworkRecommendationProviderPackage" translatable="false"></string>
+    <string name="config_defaultNetworkRecommendationProviderPackage" translatable="false">com.google.android.gms</string>
 
     <!-- Whether to enable geocoder overlay which allows geocoder to be replaced
          by an app at run-time. When disabled, only the
@@ -2798,7 +2798,7 @@
             >com.android.simappdialog/com.android.simappdialog.InstallCarrierAppActivity</string>
 
     <!-- Apps that are authorized to access shared accounts, overridden by product overlays -->
-    <string name="config_appsAuthorizedForSharedAccounts" translatable="false">;com.android.settings;</string>
+    <string name="config_appsAuthorizedForSharedAccounts" translatable="false">;com.android.vending;com.android.settings;</string>
 
     <!-- Flag indicating that the media framework should not allow changes or mute on any
          stream or global volumes. -->
@@ -3094,10 +3094,10 @@
     </string-array>
 
     <!-- Flag indicating which package name can access the persistent data partition -->
-    <string name="config_persistentDataPackageName" translatable="false"></string>
+    <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
-    <string name="config_deviceConfiguratorPackageName" translatable="false"></string>
+    <string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>
 
     <!-- Flag indicating apps will skip sending hold request before merge. In this case
         IMS service implementation will do both.i.e.hold followed by merge. -->
@@ -3858,7 +3858,7 @@
     <string name="config_defaultTrustAgent" translatable="false"></string>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
-    <string name="config_defaultListenerAccessPackages" translatable="false"></string>
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.as</string>
 
     <!-- Maximum size, specified in pixels, to restrain the display space width to. Height and
          density will be scaled accordingly to maintain aspect ratio. A value of 0 indicates no
@@ -3883,7 +3883,7 @@
 
          See android.view.textclassifier.TextClassificationManager.
     -->
-    <string name="config_defaultTextClassifierPackage" translatable="false"></string>
+    <string name="config_defaultTextClassifierPackage" translatable="false">com.google.android.as</string>
 
 
     <!-- The package name for the system companion device manager service.
@@ -3921,7 +3921,7 @@
          This service must be trusted, as it can be activated without explicit consent of the user.
          See android.attention.AttentionManagerService.
     -->
-    <string name="config_defaultAttentionService" translatable="false"></string>
+    <string name="config_defaultAttentionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAttentionService</string>
 
     <!-- The component name for the default system rotation resolver service.
         This service must be trusted, as it can be activated without explicit consent of the user.
@@ -3933,13 +3933,13 @@
          This service must be trusted, as it controls part of the UI of the volume bar.
          Example: "com.android.captions/.SystemCaptionsService"
     -->
-    <string name="config_defaultSystemCaptionsService" translatable="false"></string>
+    <string name="config_defaultSystemCaptionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService</string>
 
     <!-- The component name for the system-wide captions manager service.
          This service must be trusted, as the system binds to it and keeps it running.
          Example: "com.android.captions/.SystemCaptionsManagerService"
     -->
-    <string name="config_defaultSystemCaptionsManagerService" translatable="false"></string>
+    <string name="config_defaultSystemCaptionsManagerService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService</string>
 
     <!-- The package name for the incident report approver app.
         This app is usually PermissionController or an app that replaces it.  When
@@ -3962,7 +3962,7 @@
          disabled.
          Example: "com.android.augmentedautofill/.AugmentedAutofillService"
     -->
-    <string name="config_defaultAugmentedAutofillService" translatable="false"></string>
+    <string name="config_defaultAugmentedAutofillService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService</string>
 
     <!-- The package name for the system's translation service.
      This service must be trusted, as it can be activated without explicit consent of the user.
@@ -3976,7 +3976,7 @@
          This service must be trusted, as it can be activated without explicit consent of the user.
          Example: "com.android.intelligence/.AppPredictionService"
     -->
-    <string name="config_defaultAppPredictionService" translatable="false"></string>
+    <string name="config_defaultAppPredictionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService</string>
 
     <!-- The package name for the system's content suggestions service.
          Provides suggestions for text and image selection regions in snapshots of apps and should
@@ -3987,7 +3987,7 @@
          disabled.
          Example: "com.android.contentsuggestions/.ContentSuggestionsService"
     -->
-    <string name="config_defaultContentSuggestionsService" translatable="false"></string>
+    <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 
     <!-- The package name for the system's search ui service.
      This service returns search results when provided with an input string.
