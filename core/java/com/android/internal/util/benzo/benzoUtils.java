@@ -23,6 +23,10 @@ import android.os.ServiceManager;
 import com.android.internal.statusbar.IStatusBarService;
 
 public class benzoUtils {
+    public static boolean deviceHasFlashlight(Context ctx) {
+        return ctx.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH);
+    }
+    
     public static void toggleCameraFlash() {
         FireActions.toggleCameraFlash();
     }
