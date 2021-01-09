@@ -121,10 +121,10 @@
 
     <!-- The attenuation in dB applied to the sound effects played
          through AudioManager.playSoundEffect() when no volume is specified. -->
-    <integer name="config_soundEffectVolumeDb">-6</integer>
+    <integer name="config_soundEffectVolumeDb">-3</integer>
 
     <!-- The attenuation in dB applied to the lock/unlock sounds. -->
-    <integer name="config_lockSoundVolumeDb">-6</integer>
+    <integer name="config_lockSoundVolumeDb">-3</integer>
 
     <!-- Flag indicating whether the AUDIO_BECOMING_NOISY notification should
          be sent during a change to the audio output device. -->
@@ -508,13 +508,13 @@
 
     <!-- Flag indicating whether we should enable the automatic brightness.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
-    <bool name="config_automatic_brightness_available">false</bool>
+    <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
     <bool name="config_adaptive_sleep_available">false</bool>
 
     <!-- Flag indicating whether we should enable smart battery. -->
-    <bool name="config_smart_battery_available">false</bool>
+    <bool name="config_smart_battery_available">true</bool>
 
     <!-- Fast brightness animation ramp rate in brightness units per second-->
     <integer translatable="false" name="config_brightness_ramp_rate_fast">180</integer>
@@ -532,7 +532,7 @@
     <bool name="config_enableServerNotificationEffectsForAutomotive">false</bool>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
-    <bool name="config_unplugTurnsOnScreen">false</bool>
+    <bool name="config_unplugTurnsOnScreen">true</bool>
 
     <!-- If this is true, the message that USB is only being used for charging will be shown. -->
     <bool name="config_usbChargingMessage">true</bool>
@@ -951,7 +951,7 @@
             1 - Toggle theater mode setting
             2 - Brightness boost
     -->
-    <integer name="config_doublePressOnPowerBehavior">0</integer>
+    <integer name="config_doublePressOnPowerBehavior">2</integer>
 
     <!-- Control the behavior when the user triple presses the power button.
             0 - Nothing
@@ -1235,7 +1235,7 @@
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">1</integer>
+    <integer name="config_screenBrightnessDoze">17</integer>
     <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.0</item>
 
     <!-- Delay that allows some content to arrive at the display before switching
@@ -1652,6 +1652,7 @@
          several permissions by the system, and should be system packages. -->
     <string-array name="config_locationProviderPackageNames" translatable="false">
         <!-- The standard AOSP fused location provider -->
+        <item>com.google.android.gms</item>
         <item>com.android.location.fused</item>
     </string-array>
 
@@ -2292,7 +2293,7 @@
     <bool name="config_syncstorageengine_masterSyncAutomatically">true</bool>
 
     <!--  Maximum number of supported users -->
-    <integer name="config_multiuserMaximumUsers">1</integer>
+    <integer name="config_multiuserMaximumUsers">3</integer>
 
     <!-- Maximum number of users we allow to be running at a time -->
     <integer name="config_multiuserMaxRunningUsers">3</integer>
@@ -2326,7 +2327,7 @@
     <integer name="config_userTypePackageWhitelistMode">13</integer> <!-- 1+4+8 -->
 
     <!-- Whether UI for multi user should be shown -->
-    <bool name="config_enableMultiUserUI">false</bool>
+    <bool name="config_enableMultiUserUI">true</bool>
 
     <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">false</bool>
@@ -2398,7 +2399,7 @@
          * The remote submix module "audio.r_submix.default" must be installed on the device.
          * The device must be provisioned with HDCP keys (for protected content).
     -->
-    <bool name="config_enableWifiDisplay">false</bool>
+    <bool name="config_enableWifiDisplay">true</bool>
 
     <!-- When true, local displays that do not contain any of their own content will automatically
          mirror the content of the default display. -->
@@ -2420,7 +2421,7 @@
     <bool name="config_useDevInputEventForAudioJack">false</bool>
 
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
-    <bool name="config_safe_media_volume_enabled">true</bool>
+    <bool name="config_safe_media_volume_enabled">false</bool>
 
     <!-- Whether safe headphone volume warning dialog is disabled on Vol+ (operator specific). -->
     <bool name="config_safe_media_disable_on_volume_up">true</bool>
@@ -2864,12 +2865,12 @@
     <bool name="imsServiceAllowTurnOff">true</bool>
 
     <!-- Flag specifying whether VoLTE is available on device -->
-    <bool name="config_device_volte_available">false</bool>
+    <bool name="config_device_volte_available">true</bool>
 
     <!-- Flag specifying whether VoLTE should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
-    <bool name="config_carrier_volte_available">false</bool>
+    <bool name="config_carrier_volte_available">true</bool>
 
     <!-- Flag specifying whether VoLTE TTY is supported -->
     <bool name="config_carrier_volte_tty_supported">true</bool>
@@ -2885,7 +2886,7 @@
     <!-- Flag specifying whether VT should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
-    <bool name="config_carrier_vt_available">false</bool>
+    <bool name="config_carrier_vt_available">true</bool>
 
     <!-- Flag specifying whether WFC over IMS is available on device -->
         <bool name="config_device_wfc_ims_available">false</bool>
@@ -2893,7 +2894,7 @@
     <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
-    <bool name="config_carrier_wfc_ims_available">false</bool>
+    <bool name="config_carrier_wfc_ims_available">true</bool>
 
     <!-- Whether to use voip audio mode for ims call -->
     <bool name="config_use_voip_mode_for_ims">false</bool>
@@ -3093,10 +3094,10 @@
     <string translatable="false" name="config_forceVoiceInteractionServicePackage"></string>
 
     <!-- This config is ued to determine whether animations are allowed in low power mode. -->
-    <bool name="config_allowAnimationsInLowPowerMode">false</bool>
+    <bool name="config_allowAnimationsInLowPowerMode">true</bool>
 
     <!-- Whether device supports double tap to wake -->
-    <bool name="config_supportDoubleTapWake">false</bool>
+    <bool name="config_supportDoubleTapWake">true</bool>
 
     <!-- The RadioAccessFamilies supported by the device.
          Empty is viewed as "all".  Only used on devices which
@@ -3169,7 +3170,7 @@
     <integer name="config_previousVibrationsDumpLimit">50</integer>
 
     <!-- The default vibration strength, must be between 1 and 255 inclusive. -->
-    <integer name="config_defaultVibrationAmplitude">255</integer>
+    <integer name="config_defaultVibrationAmplitude">205</integer>
 
     <!-- If the device should still vibrate even in low power mode, for certain priority vibrations
      (e.g. accessibility, alarms). This is mainly for Wear devices that don't have speakers. -->
@@ -3226,7 +3227,7 @@
              opaque.
          2 - Nav bar is never forced opaque.
          -->
-    <integer name="config_navBarOpacityMode">0</integer>
+    <integer name="config_navBarOpacityMode">1</integer>
 
     <!-- Controls the navigation bar interaction mode:
          0: 3 button mode (back, home, overview buttons)
@@ -3363,7 +3364,7 @@
 
     <!-- True if the device requires AppWidgetService even if it does not have
          the PackageManager.FEATURE_APP_WIDGETS feature -->
-    <bool name="config_enableAppWidgetService">false</bool>
+    <bool name="config_enableAppWidgetService">true</bool>
 
     <!-- True if the device supports Sustained Performance Mode-->
     <bool name="config_sustainedPerformanceModeSupported">false</bool>
@@ -3404,7 +3405,7 @@
     <integer name="config_keepPreloadsMinDays">7</integer>
 
     <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
-    <bool name="config_useRoundIcon">false</bool>
+    <bool name="config_useRoundIcon">true</bool>
 
     <!-- Flag indicating whether the assist disclosure can be disabled using
          ASSIST_DISCLOSURE_ENABLED. -->
@@ -3501,7 +3502,7 @@
     <bool name="config_allow3rdPartyAppOnInternal">true</bool>
 
     <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
-    <string name="config_icon_mask" translatable="false">"M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"</string>
+    <string name="config_icon_mask" translatable="false">"M50,0L92,0C96.42,0 100,4.58 100 8L100,92C100, 96.42 96.42 100 92 100L8 100C4.58, 100 0 96.42 0 92L0 8 C 0 4.42 4.42 0 8 0L50 0Z"</string>
 
     <!-- The component name, flattened to a string, for the default accessibility service to be
          enabled by the accessibility shortcut. This service must be trusted, as it can be activated
@@ -3730,7 +3731,7 @@
     <bool name="config_tintNotificationActionButtons">true</bool>
 
     <!-- Show area update info settings in CellBroadcastReceiver and information in SIM status in Settings app -->
-    <bool name="config_showAreaUpdateInfoSettings">false</bool>
+    <bool name="config_showAreaUpdateInfoSettings">true</bool>
 
     <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
     <bool name="config_defaultRingtonePickerEnabled">true</bool>
@@ -3897,7 +3898,7 @@
     <bool name="config_zramWriteback">false</bool>
 
     <!-- Whether cbrs is supported on the device or not -->
-    <bool translatable="false" name="config_cbrs_supported">false</bool>
+    <bool translatable="false" name="config_cbrs_supported">true</bool>
 
     <!-- Whether or not aware is enabled by default -->
     <bool name="config_awareSettingAvailable">false</bool>
@@ -4359,10 +4360,10 @@
     <string name="config_powerSaveModeChangedListenerPackage" translatable="false"></string>
 
     <!-- Set to true to enable the user switcher on the keyguard. -->
-    <bool name="config_keyguardUserSwitcher">false</bool>
+    <bool name="config_keyguardUserSwitcher">true</bool>
 
     <!-- If true, show multiuser switcher by default unless the user specifically disables it. -->
-    <bool name="config_showUserSwitcherByDefault">false</bool>
+    <bool name="config_showUserSwitcherByDefault">true</bool>
 
     <!-- Set to true to make assistant show in front of the dream/screensaver. -->
     <bool name="config_assistantOnTopOfDream">false</bool>
