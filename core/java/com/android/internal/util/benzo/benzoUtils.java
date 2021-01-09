@@ -16,9 +16,14 @@
 
 package com.android.internal.util.benzo;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.SystemProperties;
 
 import com.android.internal.statusbar.IStatusBarService;
 
