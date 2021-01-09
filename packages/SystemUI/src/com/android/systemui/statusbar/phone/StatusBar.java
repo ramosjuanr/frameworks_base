@@ -139,6 +139,7 @@ import com.android.systemui.ActivityIntentHelper;
 import com.android.systemui.AutoReinflateContainer;
 import com.android.systemui.DejankUtils;
 import com.android.systemui.DemoMode;
+import com.android.systemui.Dependency;
 import com.android.systemui.Dumpable;
 import com.android.systemui.EventLogTags;
 import com.android.systemui.InitController;
@@ -2057,14 +2058,10 @@ public class StatusBar extends SystemUI implements DemoMode,
 
     @Override
     public void toggleCameraFlash() {
-        if (DEBUG) {
-            Log.d(TAG, "Toggling camera flashlight");
-        }
-        if (mFlashlightController != null) {
-            mFlashlightController.initFlashLight();
-            if (mFlashlightController.hasFlashlight() && mFlashlightController.isAvailable()) {
-                mFlashlightController.setFlashlight(!mFlashlightController.isEnabled());
-            }
+        if (mFlashlightController != null
+                && mFlashlightController.hasFlashlight()
+                && mFlashlightController.isAvailable()) {
+            mFlashlightController.setFlashlight(!mFlashlightController.isEnabled());
         }
     }
 
