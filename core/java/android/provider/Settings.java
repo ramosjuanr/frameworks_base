@@ -5217,7 +5217,14 @@ public final class Settings {
          */
         public static final String[] LEGACY_RESTORE_SETTINGS = {
         };
-
+	
+	/**
+         * Whether to show media album art on keyguard
+         * @hide
+         */
+        @Readable
+        public static final String KEYGAURD_MEDIA_ART = "lockscreen_media_art";
+        
         /**
          * These are all public system settings
          *
