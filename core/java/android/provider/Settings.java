@@ -5223,7 +5223,7 @@ public final class Settings {
          * @hide
          */
         @Readable
-        public static final String KEYGAURD_MEDIA_ART = "lockscreen_media_art";
+        public static final String LOCKSCREEN_MEDIA_ART = "lockscreen_media_art";
         
         /**
          * These are all public system settings
