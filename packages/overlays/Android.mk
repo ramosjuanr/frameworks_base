@@ -36,6 +36,11 @@ LOCAL_REQUIRED_MODULES := \
 	NavigationBarModeGesturalOverlayWideBack \
 	NavigationBarModeGesturalOverlayExtraWideBack \
         NoCutoutOverlay \
+        IconShapePebbleOverlay \
+    	IconShapeRoundedRectOverlay \
+    	IconShapeSquareOverlay \
+    	IconShapeSquircleOverlay \
+    	IconShapeTeardropOverlay \
 	preinstalled-packages-platform-overlays.xml
 
 include $(BUILD_PHONY_PACKAGE)
