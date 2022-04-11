@@ -125,10 +125,10 @@
 
     <!-- The attenuation in dB applied to the sound effects played
          through AudioManager.playSoundEffect() when no volume is specified. -->
-    <integer name="config_soundEffectVolumeDb">-6</integer>
+    <integer name="config_soundEffectVolumeDb">-3</integer>
 
     <!-- The attenuation in dB applied to the lock/unlock sounds. -->
-    <integer name="config_lockSoundVolumeDb">-6</integer>
+    <integer name="config_lockSoundVolumeDb">-3</integer>
 
     <!-- Flag indicating whether the AUDIO_BECOMING_NOISY notification should
          be sent during a change to the audio output device. -->
@@ -490,13 +490,13 @@
 
     <!-- Flag indicating whether we should enable the automatic brightness.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
-    <bool name="config_automatic_brightness_available">false</bool>
+    <bool name="config_automatic_brightness_available">true</bool>
 
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
-    <bool name="config_adaptive_sleep_available">false</bool>
+    <bool name="config_adaptive_sleep_available">true</bool>
 
     <!-- Flag indicating whether we should enable smart battery. -->
-    <bool name="config_smart_battery_available">false</bool>
+    <bool name="config_smart_battery_available">true</bool>
 
     <!-- Flag indicating whether we should enable camera-based autorotate -->
     <bool name="config_camera_autorotate">false</bool>
@@ -517,7 +517,7 @@
     <bool name="config_enableServerNotificationEffectsForAutomotive">false</bool>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
-    <bool name="config_unplugTurnsOnScreen">false</bool>
+    <bool name="config_unplugTurnsOnScreen">true</bool>
 
     <!-- If this is true, the message that USB is only being used for charging will be shown. -->
     <bool name="config_usbChargingMessage">true</bool>
@@ -867,7 +867,7 @@
     <integer name="config_reduceBrightColorsStrengthMax">90</integer>
 
     <!-- Boolean indicating whether display white balance is supported. -->
-    <bool name="config_displayWhiteBalanceAvailable">false</bool>
+    <bool name="config_displayWhiteBalanceAvailable">true</bool>
 
     <!-- Boolean indicating whether display white balance should be enabled by default. -->
     <bool name="config_displayWhiteBalanceEnabledDefault">false</bool>
@@ -1002,7 +1002,7 @@
             0 - Nothing
             1 - Global actions menu
     -->
-    <integer name="config_veryLongPressOnPowerBehavior">0</integer>
+    <integer name="config_veryLongPressOnPowerBehavior">1</integer>
 
     <!-- Control the behavior when the user presses the power and volume up buttons together.
             0 - Nothing
@@ -1036,14 +1036,14 @@
             1 - Toggle theater mode setting
             2 - Brightness boost
     -->
-    <integer name="config_doublePressOnPowerBehavior">0</integer>
+    <integer name="config_doublePressOnPowerBehavior">2</integer>
 
     <!-- Control the behavior when the user triple presses the power button.
             0 - Nothing
             1 - Toggle theater mode setting
             2 - Brightness boost
     -->
-    <integer name="config_triplePressOnPowerBehavior">0</integer>
+    <integer name="config_triplePressOnPowerBehavior">2</integer>
 
     <!-- Control the behavior when the user presses the sleep button.
             0 - Go to sleep (doze)
@@ -1802,6 +1802,7 @@
          several permissions by the system, and should be system packages. -->
     <string-array name="config_locationProviderPackageNames" translatable="false">
         <!-- The standard AOSP fused location provider -->
+        <item>com.google.android.gms</item>
         <item>com.android.location.fused</item>
     </string-array>
 
@@ -2007,7 +2008,7 @@
     <!-- The name of the package that will hold the call screening role by default. -->
     <string name="config_defaultCallScreening" translatable="false"></string>
     <!-- The name of the package that will hold the system gallery role. -->
-    <string name="config_systemGallery" translatable="false">com.android.gallery3d</string>
+    <string name="config_systemGallery" translatable="false">com.google.android.apps.photosgo</string>
     <!-- The names of the packages that will hold the automotive projection role. -->
     <string name="config_systemAutomotiveProjection" translatable="false"></string>
     <!-- The name of the package that will hold the system cluster service role. -->
@@ -2021,7 +2022,7 @@
     <!-- The name of the package that will hold the system Wi-Fi coex manager role. -->
     <string name="config_systemWifiCoexManager" translatable="false"></string>
     <!-- The name of the package that will hold the wellbeing role. -->
-    <string name="config_systemWellbeing" translatable="false"></string>
+    <string name="config_systemWellbeing" translatable="false">com.google.android.apps.wellbeing</string>
     <!-- The name of the package that will hold the television notification handler role -->
     <string name="config_systemTelevisionNotificationHandler" translatable="false"></string>
     <!-- The name of the package that will hold the system activity recognizer role. -->
@@ -2292,7 +2293,7 @@
     <string name="config_dreamsDefaultComponent" translatable="false">com.google.android.deskclock/com.android.deskclock.Screensaver</string>
 
     <!-- Are we allowed to dream while not plugged in? -->
-    <bool name="config_dreamsEnabledOnBattery">false</bool>
+    <bool name="config_dreamsEnabledOnBattery">true</bool>
     <!-- Minimum battery level to allow dreaming when powered.
          Use -1 to disable this safety feature. -->
     <integer name="config_dreamsBatteryLevelMinimumWhenPowered">-1</integer>
@@ -2322,7 +2323,7 @@
     <bool name="config_dozeAfterScreenOffByDefault">false</bool>
 
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
-    <bool name="config_dozePulsePickup">false</bool>
+    <bool name="config_dozePulsePickup">true</bool>
 
     <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
     <string name="config_dozeDoubleTapSensorType" translatable="false"></string>
@@ -2616,7 +2617,7 @@
          * The remote submix module "audio.r_submix.default" must be installed on the device.
          * The device must be provisioned with HDCP keys (for protected content).
     -->
-    <bool name="config_enableWifiDisplay">false</bool>
+    <bool name="config_enableWifiDisplay">true</bool>
 
     <!-- When true, local displays that do not contain any of their own content will automatically
          mirror the content of the default display. -->
@@ -2638,7 +2639,7 @@
     <bool name="config_useDevInputEventForAudioJack">false</bool>
 
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
-    <bool name="config_safe_media_volume_enabled">true</bool>
+    <bool name="config_safe_media_volume_enabled">false</bool>
 
     <!-- Whether safe headphone volume warning dialog is disabled on Vol+ (operator specific). -->
     <bool name="config_safe_media_disable_on_volume_up">true</bool>
@@ -3345,7 +3346,7 @@
     <integer name="config_fingerprintMaxTemplatesPerUser">5</integer>
 
     <!-- Specify if the fingerprint hardware support gestures-->
-    <bool name="config_fingerprintSupportsGestures">false</bool>
+    <bool name="config_fingerprintSupportsGestures">true</bool>
 
     <!-- This config is used to force VoiceInteractionService to start on certain low ram devices.
          It declares the package name of VoiceInteractionService that should be started. -->
@@ -3428,7 +3429,7 @@
     <integer name="config_previousVibrationsDumpLimit">50</integer>
 
     <!-- The default vibration strength, must be between 1 and 255 inclusive. -->
-    <integer name="config_defaultVibrationAmplitude">255</integer>
+    <integer name="config_defaultVibrationAmplitude">175</integer>
 
     <!-- The max vibration strength allowed in audio haptic channels, must be positive or zero if
          limit is unknown. -->
@@ -3915,7 +3916,7 @@
          on the device.
          Example: "com.android.wellbeing"
      -->
-    <string name="config_defaultWellbeingPackage" translatable="false"></string>
+    <string name="config_defaultWellbeingPackage" translatable="false">com.google.android.apps.wellbeing</string>
 
     <!-- The component name for the default system attention service.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -4848,7 +4849,7 @@
     <string name="config_powerSaveModeChangedListenerPackage" translatable="false"></string>
 
     <!-- Set to true to enable the user switcher on the keyguard. -->
-    <bool name="config_keyguardUserSwitcher">false</bool>
+    <bool name="config_keyguardUserSwitcher">true</bool>
 
     <!-- If true, show multiuser switcher by default unless the user specifically disables it. -->
     <bool name="config_showUserSwitcherByDefault">false</bool>
