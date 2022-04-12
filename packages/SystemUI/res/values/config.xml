@@ -38,10 +38,10 @@
     </integer-array>
 
     <!-- Show mic or phone affordance on Keyguard -->
-    <bool name="config_keyguardShowLeftAffordance">false</bool>
+    <bool name="config_keyguardShowLeftAffordance">true</bool>
 
     <!-- Show camera affordance on Keyguard -->
-    <bool name="config_keyguardShowCameraAffordance">false</bool>
+    <bool name="config_keyguardShowCameraAffordance">true</bool>
 
     <!-- decay duration (from size_max -> size), in ms -->
     <integer name="navigation_bar_deadzone_hold">333</integer>
@@ -130,7 +130,7 @@
     <integer name="keyguard_max_notification_count">-1</integer>
 
     <!-- Doze: does this device support STATE_DOZE?  -->
-    <bool name="doze_display_state_supported">false</bool>
+    <bool name="doze_display_state_supported">true</bool>
 
     <!-- Doze: does this device support STATE_DOZE_SUSPEND?  -->
     <bool name="doze_suspend_display_state_supported">false</bool>
@@ -359,7 +359,7 @@
     <bool name="config_enableNotificationShadeDrag">true</bool>
 
     <!-- Whether to show activity indicators in the status bar -->
-    <bool name="config_showActivity">false</bool>
+    <bool name="config_showActivity">true</bool>
 
     <!-- Whether or not the button to clear all notifications will be shown. -->
     <bool name="config_enableNotificationsClearAll">true</bool>
@@ -369,11 +369,11 @@
     <bool name="config_showNotificationShelf">true</bool>
 
     <!-- Whether or not the notifications should always fade as they are dismissed. -->
-    <bool name="config_fadeNotificationsOnDismiss">false</bool>
+    <bool name="config_fadeNotificationsOnDismiss">true</bool>
 
     <!-- Whether or not the fade on the notification is based on the amount that it has been swiped
          off-screen. -->
-    <bool name="config_fadeDependingOnAmountSwiped">false</bool>
+    <bool name="config_fadeDependingOnAmountSwiped">true</bool>
 
     <!-- Whether or the notifications should be clipped to be reduced in height if it has been
          scrolled to the top of the screen. -->

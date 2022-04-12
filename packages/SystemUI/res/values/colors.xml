@@ -19,7 +19,7 @@
 <resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
     <drawable name="notification_number_text_color">#ffffffff</drawable>
     <drawable name="system_bar_background">@color/system_bar_background_opaque</drawable>
-    <color name="system_bar_background_opaque">#ff000000</color>
+    <color name="system_bar_background_opaque">#ff121212</color>
     <color name="system_bar_background_transparent">#00000000</color>
     <color name="qs_tile_divider">#29ffffff</color><!-- 16% white -->
     <color name="qs_detail_button_white">#B3FFFFFF</color><!-- 70% white -->
