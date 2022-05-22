@@ -16,7 +16,6 @@
 
 package com.benzorom.systemui
 
-import android.content.res.AssetManager
 import android.os.Handler
 import android.content.res.AssetManager
 import com.android.systemui.SystemUIFactory
