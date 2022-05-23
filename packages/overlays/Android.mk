@@ -28,6 +28,7 @@ LOCAL_REQUIRED_MODULES := \
 	DisplayCutoutEmulationTallOverlay \
 	DisplayCutoutEmulationWaterfallOverlay \
 	DisplayCutoutEmulationWideOverlay \
+	FontGoogleSansOverlay \
 	FontNotoSerifSourceOverlay \
 	NavigationBarMode3ButtonOverlay \
 	NavigationBarMode2ButtonOverlay \
