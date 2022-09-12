@@ -2101,7 +2101,7 @@
     <!-- The name of the package that will hold the call screening role by default. -->
     <string name="config_defaultCallScreening" translatable="false">com.android.dialer</string>
     <!-- The name of the package that will hold the system gallery role. -->
-    <string name="config_systemGallery" translatable="false">com.android.gallery3d</string>
+    <string name="config_systemGallery" translatable="false">com.google.android.apps.photosgo</string>
     <!-- The names of the packages that will hold the automotive projection role. -->
     <string name="config_systemAutomotiveProjection" translatable="false"></string>
     <!-- The name of the package that will hold the system cluster service role. -->
