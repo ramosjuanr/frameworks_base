@@ -35,7 +35,6 @@ LOCAL_REQUIRED_MODULES := \
 	NavigationBarModeGesturalOverlayNarrowBack \
 	NavigationBarModeGesturalOverlayWideBack \
 	NavigationBarModeGesturalOverlayExtraWideBack \
-	OneHandedModeGesturalOverlay \
         NoCutoutOverlay \
 	preinstalled-packages-platform-overlays.xml
 
