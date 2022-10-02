@@ -220,12 +220,17 @@ final class DefaultPermissionGrantPolicy {
         NEARBY_DEVICES_PERMISSIONS.add(Manifest.permission.UWB_RANGING);
         NEARBY_DEVICES_PERMISSIONS.add(Manifest.permission.NEARBY_WIFI_DEVICES);
     }
-
+    
     private static final Set<String> NOTIFICATION_PERMISSIONS = new ArraySet<>();
     static {
         NOTIFICATION_PERMISSIONS.add(Manifest.permission.POST_NOTIFICATIONS);
     }
-
+    
+    private static final Set<String> SUSPEND_APP_PERMISSIONS = new ArraySet<>();
+    static {
+        SUSPEND_APP_PERMISSIONS.add(Manifest.permission.SUSPEND_APPS);
+    }
+    
     private static final int MSG_READ_DEFAULT_PERMISSION_EXCEPTIONS = 1;
 
     private static final String ACTION_TRACK = "com.android.fitness.TRACK";
@@ -912,6 +917,30 @@ final class DefaultPermissionGrantPolicy {
                 MidiManager.BLUETOOTH_MIDI_SERVICE_PACKAGE, userId,
                 NEARBY_DEVICES_PERMISSIONS);
 
+	// Google Play Services
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.gms", userId, SENSORS_PERMISSIONS,
+                CALENDAR_PERMISSIONS, CAMERA_PERMISSIONS, CONTACTS_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS,
+                MICROPHONE_PERMISSIONS, PHONE_PERMISSIONS, SMS_PERMISSIONS, STORAGE_PERMISSIONS);
+	
+	// Google Setup Wizard
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.setupwizard", userId, CONTACTS_PERMISSIONS,
+                PHONE_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS, CAMERA_PERMISSIONS, SMS_PERMISSIONS,
+                STORAGE_PERMISSIONS);
+
+	// Carrier Setup
+        grantSystemFixedPermissionsToSystemPackage(pm,"com.google.android.carriersetup", userId, PHONE_PERMISSIONS,
+                SMS_PERMISSIONS);
+
+	// Flipendo
+        grantSystemFixedPermissionsToSystemPackage(pm,
+                getDefaultProviderAuthorityPackage("com.google.android.flipendo", userId),
+                userId, SUSPEND_APP_PERMISSIONS);
+
+	// Mediascanner
+        grantSystemFixedPermissionsToSystemPackage(pm,
+                getDefaultProviderAuthorityPackage("com.android.providers.media.MediaProvider", userId), userId,
+                STORAGE_PERMISSIONS);
+                                                                    
         // Ad Service
         String commonServiceAction = "android.adservices.AD_SERVICES_COMMON_SERVICE";
         grantPermissionsToSystemPackage(pm, getDefaultSystemHandlerServicePackage(pm,
