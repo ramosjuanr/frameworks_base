@@ -98,7 +98,7 @@
     <!-- Height of notification icons in the status bar -->
     <dimen name="status_bar_icon_size">22dip</dimen>
     <!-- Desired size of system icons in status bar. -->
-    <dimen name="status_bar_system_icon_size">19dp</dimen>
+    <dimen name="status_bar_system_icon_size">17dp</dimen>
     <!-- Intrinsic size of most system icons in status bar. This is the default value that
          is used if a Drawable reports an intrinsic size of 0. -->
     <dimen name="status_bar_system_icon_intrinsic_size">17dp</dimen>
