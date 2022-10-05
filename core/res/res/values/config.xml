@@ -246,7 +246,7 @@
          dozing).  This should be enabled if you have such services and expect apps to
          correctly use them when installed on your device.  Otherwise, keep this disabled
          so that applications can still use their own mechanisms. -->
-    <bool name="config_enableAutoPowerModes">false</bool>
+    <bool name="config_enableAutoPowerModes">true</bool>
 
     <!-- Whether (if true) this is a kind of device that can be moved around (eg. phone/laptop),
          or (if false) something for which movement is either not measurable or should not count
@@ -1115,10 +1115,10 @@
     <integer name="config_wakeUpToLastStateTimeoutMillis">0</integer>
 
     <!-- Package name for default keyguard appwidget [DO NOT TRANSLATE] -->
-    <string name="widget_default_package_name" translatable="false"></string>
+    <string name="widget_default_package_name" translatable="false">com.android.deskclock</string>
 
     <!-- Class name for default keyguard appwidget [DO NOT TRANSLATE] -->
-    <string name="widget_default_class_name" translatable="false"></string>
+    <string name="widget_default_class_name" translatable="false">com.android.alarmclock.DigitalAppWidgetProvider</string>
 
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">false</bool>
@@ -1796,7 +1796,7 @@
          This setting is ignored if config_enableGeolocationTimeZoneDetection is false.
 
          AOSP does not configure a primary location time zone provider. -->
-    <bool name="config_enablePrimaryLocationTimeZoneProvider" translatable="false">false</bool>
+    <bool name="config_enablePrimaryLocationTimeZoneProvider" translatable="false">true</bool>
 
     <!-- The package hosting the primary location time zone provider.
          Only used when config_enableGeolocationTimeZoneDetection and
@@ -1804,7 +1804,7 @@
 
          See android.service.timezone.TimeZoneProviderService for how to host location time zone
          provider services. -->
-    <string name="config_primaryLocationTimeZoneProviderPackageName" translatable="false"></string>
+    <string name="config_primaryLocationTimeZoneProviderPackageName" translatable="false">com.google.android.gms</string>
 
     <!-- Whether the secondary location time zone provider is enabled.
          This setting is ignored if config_enableGeolocationTimeZoneDetection is false.
@@ -2084,7 +2084,7 @@
     <string name="default_browser" translatable="false"></string>
 
     <!-- The name of the package that will hold the assistant role by default. -->
-    <string name="config_defaultAssistant" translatable="false" />
+    <string name="config_defaultAssistant" translatable="false">com.google.android.googlequicksearchbox</string>
     <!-- Whether the default assistant settings should be shown. -->
     <bool name="config_showDefaultAssistant">true</bool>
     <!-- The name of the package that will hold the browser role by default. -->
@@ -2104,7 +2104,7 @@
     <!-- The name of the package that will hold the system gallery role. -->
     <string name="config_systemGallery" translatable="false">com.google.android.apps.photosgo</string>
     <!-- The names of the packages that will hold the automotive projection role. -->
-    <string name="config_systemAutomotiveProjection" translatable="false"></string>
+    <string name="config_systemAutomotiveProjection" translatable="false">com.google.android.projection.gearhead</string>
     <!-- The name of the package that will hold the system cluster service role. -->
     <string name="config_systemAutomotiveCluster" translatable="false"></string>
     <!-- The name of the package that will hold the system shell role. -->
@@ -2112,7 +2112,7 @@
     <!-- The name of the package that will hold the system contacts role. -->
     <string name="config_systemContacts" translatable="false">com.android.contacts</string>
     <!-- The name of the package that will hold the speech recognizer role by default. -->
-    <string name="config_systemSpeechRecognizer" translatable="false"></string>
+    <string name="config_systemSpeechRecognizer" translatable="false">com.google.android.tts</string>
     <!-- The name of the package that will hold the system Wi-Fi coex manager role. -->
     <string name="config_systemWifiCoexManager" translatable="false"></string>
     <!-- The name of the package that will hold the wellbeing role. -->
@@ -2122,7 +2122,7 @@
     <!-- The name of the package that will hold the television notification handler role -->
     <string name="config_systemTelevisionNotificationHandler" translatable="false"></string>
     <!-- The name of the package that will hold the system activity recognizer role. -->
-    <string name="config_systemActivityRecognizer" translatable="false"></string>
+    <string name="config_systemActivityRecognizer" translatable="false">com.google.android.gms</string>
     <!-- The name of the package that will hold the system ui role -->
     <string name="config_systemUi" translatable="false">com.android.systemui</string>
     <!-- The name of the package that will hold the television remote service role.
@@ -3063,7 +3063,7 @@
     <integer name="config_windowOutsetBottom">0</integer>
 
     <!-- Package name for default network scorer app; overridden by product overlays. -->
-    <string name="config_defaultNetworkScorerPackageName"></string>
+    <string name="config_defaultNetworkScorerPackageName">com.google.android.gms</string>
 
     <!-- The amount to scale fullscreen snapshots for Overview and snapshot starting windows. -->
     <item name="config_highResTaskSnapshotScale" format="float" type="dimen">1.0</item>
@@ -3983,7 +3983,7 @@
          enabled by the accessibility shortcut. This service must be trusted, as it can be activated
          without explicit consent of the user. If no accessibility service with the specified name
          exists on the device, the accessibility shortcut will be disabled by default. -->
-    <string name="config_defaultAccessibilityService" translatable="false"></string>
+    <string name="config_defaultAccessibilityService" translatable="false">com.google.android.marvin.talkback/.TalkBackService</string>
 
     <!-- Flag indicates that whether escrow token API is enabled for TrustAgent -->
     <!-- Warning: This API can be dangerous when not implemented properly. In particular,
