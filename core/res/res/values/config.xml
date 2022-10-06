@@ -1851,7 +1851,26 @@
          set before. -->
     <bool name="config_defaultAdasGnssLocationEnabled" translatable="false">false</bool>
 
-    <string-array name="config_locationExtraPackageNames" translatable="false"></string-array>
+    <string-array name="config_locationExtraPackageNames" translatable="false">
+        <!-- Bluetooth -->
+        <item>com.android.bluetooth</item>
+        <!-- TeleService -->
+        <item>com.android.phone</item>
+        <!-- CneApp -->
+        <item>com.qualcomm.qti.cne</item>
+        <!-- ImsService -->
+        <item>com.shannon.imsservice</item>
+        <!-- PrintSpooler -->
+        <item>com.android.printspooler</item>
+        <!-- Network Tethering -->
+        <item>com.android.networkstack.tethering</item>
+        <!-- Systemui -->
+        <item>com.android.systemui</item>
+        <!-- Settings Intelligence -->
+        <item>com.google.android.settings.intelligence</item>
+        <!-- Cellbroadcastservice -->
+        <item>com.android.cellbroadcastservice</item>
+    </string-array>
 
     <!-- The package name of the default network recommendation app.
          A network recommendation provider must:
@@ -2671,7 +2690,7 @@
     <integer name="config_userTypePackageWhitelistMode">13</integer> <!-- 1+4+8 -->
 
     <!-- Whether UI for multi user should be shown -->
-    <bool name="config_enableMultiUserUI">false</bool>
+    <bool name="config_enableMultiUserUI">true</bool>
 
     <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">false</bool>
