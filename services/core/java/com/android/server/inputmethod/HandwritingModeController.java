@@ -47,7 +47,7 @@ final class HandwritingModeController {
 
     public static final String TAG = HandwritingModeController.class.getSimpleName();
     // TODO(b/210039666): flip the flag.
-    static final boolean DEBUG = false;
+    static final boolean DEBUG = true;
     private static final int EVENT_BUFFER_SIZE = 100;
 
     // This must be the looper for the UiThread.
