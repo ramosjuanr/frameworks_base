@@ -713,7 +713,7 @@
     <dimen name="qs_security_footer_corner_radius">28dp</dimen>
 
     <dimen name="segmented_button_spacing">0dp</dimen>
-    <dimen name="borderless_button_radius">2dp</dimen>
+    <dimen name="borderless_button_radius">4dp</dimen>
 
     <dimen name="restricted_padlock_pading">4dp</dimen>
 

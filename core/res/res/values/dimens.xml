@@ -110,34 +110,34 @@
     <dimen name="status_bar_edge_ignore">5dp</dimen>
 
     <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">0dp</dimen>
+    <dimen name="rounded_corner_radius">8dp</dimen>
     <!-- Radius of the software rounded corners at the top of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">0dp</dimen>
+    <dimen name="rounded_corner_radius_top">8dp</dimen>
     <!-- Radius of the software rounded corners at the bottom of the display in its natural
         orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">0dp</dimen>
+    <dimen name="rounded_corner_radius_bottom">8dp</dimen>
 
     <!-- Default adjustment for the software rounded corners since corners are not perfectly
         round. This value is used when retrieving the "radius" of the rounded corner in cases
         where the exact bezier curve cannot be retrieved.  This value will be subtracted from
         rounded_corner_radius to more accurately provide a "radius" for the rounded corner. -->
-    <dimen name="rounded_corner_radius_adjustment">0px</dimen>
+    <dimen name="rounded_corner_radius_adjustment">8px</dimen>
     <!-- Top adjustment for the software rounded corners since corners are not perfectly
         round.  This value is used when retrieving the "radius" of the top rounded corner in cases
         where the exact bezier curve cannot be retrieved.  This value will be subtracted from
         rounded_corner_radius_top to more accurately provide a "radius" for the top rounded corners.
          -->
-    <dimen name="rounded_corner_radius_top_adjustment">0px</dimen>
+    <dimen name="rounded_corner_radius_top_adjustment">8px</dimen>
     <!-- Bottom adjustment for the software rounded corners since corners are not perfectly
         round.  This value is used when retrieving the "radius" of the bottom rounded corner in
         cases where the exact bezier curve cannot be retrieved.  This value will be subtracted from
         rounded_corner_radius_bottom to more accurately provide a "radius" for the bottom rounded
         corners. -->
-    <dimen name="rounded_corner_radius_bottom_adjustment">0px</dimen>
+    <dimen name="rounded_corner_radius_bottom_adjustment">8px</dimen>
 
     <!-- Default paddings for content around the corners. -->
-    <dimen name="rounded_corner_content_padding">0dp</dimen>
+    <dimen name="rounded_corner_content_padding">6dp</dimen>
 
     <!-- Copied from SysUI's @dimen/navigation_key_width for the embedded nav bar in the IME. -->
     <dimen name="input_method_navigation_key_width">70dp</dimen>
@@ -756,7 +756,7 @@
     <!-- Top/bottom padding of the tooltip text. -->
     <dimen name="tooltip_vertical_padding">6.5dp</dimen>
     <!-- Border corner radius of the tooltip window. -->
-    <dimen name="tooltip_corner_radius">2dp</dimen>
+    <dimen name="tooltip_corner_radius">8dp</dimen>
     <!-- View with the height equal or above this threshold will have a tooltip anchored
     to the mouse/touch position -->
     <dimen name="tooltip_precise_anchor_threshold">96dp</dimen>
@@ -916,7 +916,7 @@
     <dimen name="slice_padding">16dp</dimen>
 
     <!-- Default dialog corner radius -->
-    <dimen name="dialog_corner_radius">2dp</dimen>
+    <dimen name="dialog_corner_radius">8dp</dimen>
 
     <!-- Size of thumbnail used in the cross profile apps animation -->
     <dimen name="cross_profile_apps_thumbnail_size">72dp</dimen>
