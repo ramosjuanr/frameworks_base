@@ -158,13 +158,13 @@
     <integer name="keyguard_max_notification_count">-1</integer>
 
     <!-- Doze: does this device support STATE_DOZE?  -->
-    <bool name="doze_display_state_supported">false</bool>
+    <bool name="doze_display_state_supported">true</bool>
 
     <!-- Doze: does this device support STATE_DOZE_SUSPEND?  -->
     <bool name="doze_suspend_display_state_supported">false</bool>
 
     <!-- Doze: should the significant motion sensor be used as a pulse signal? -->
-    <bool name="doze_pulse_on_significant_motion">false</bool>
+    <bool name="doze_pulse_on_significant_motion">true</bool>
 
     <!-- Doze: check proximity sensor before pulsing? -->
     <bool name="doze_proximity_check_before_pulse">true</bool>
@@ -333,7 +333,7 @@
     <integer name="config_showTemperatureWarning">0</integer>
 
     <!-- Whether to show a alarm dialog when device's usb port is overheating. -->
-    <integer name="config_showUsbPortAlarm">0</integer>
+    <integer name="config_showUsbPortAlarm">1</integer>
 
     <item type="id" name="action_toggle_overview"/>
 
@@ -352,7 +352,7 @@
     <bool name="config_enableNotificationShadeDrag">true</bool>
 
     <!-- Whether to show activity indicators in the status bar -->
-    <bool name="config_showActivity">false</bool>
+    <bool name="config_showActivity">true</bool>
 
     <!-- Whether or not to show the notification shelf that houses the icons of notifications that
      have been scrolled off-screen. -->
@@ -360,7 +360,7 @@
 
     <!-- Whether or not the fade on the notification is based on the amount that it has been swiped
          off-screen. -->
-    <bool name="config_fadeDependingOnAmountSwiped">false</bool>
+    <bool name="config_fadeDependingOnAmountSwiped">true</bool>
 
     <!-- Whether or the notifications should be clipped to be reduced in height if it has been
          scrolled to the top of the screen. -->
@@ -389,7 +389,7 @@
 
     <!-- Whether or not there should be dividing lines between child notifications when the
          group has been expanded. -->
-    <bool name="config_showDividersWhenGroupNotificationExpanded">false</bool>
+    <bool name="config_showDividersWhenGroupNotificationExpanded">true</bool>
 
     <!-- Whether or not the dividing lines should be shown when the container is expanding and
          collapsing. If this value is true, then the lines will only show when the container has
@@ -408,7 +408,7 @@
 
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->
-    <bool name="config_vibrateOnIconAnimation">false</bool>
+    <bool name="config_vibrateOnIconAnimation">true</bool>
 
     <!-- Notifications are sized to match the width of two (of 4) qs tiles in landscape. -->
     <bool name="config_skinnyNotifsInLandscape">true</bool>
@@ -462,7 +462,7 @@
     <!-- Screenshot editing default activity.  Must handle ACTION_EDIT image/png intents.
          Blank sends the user to the Chooser first.
          This name is in the ComponentName flattened format (package/class)  -->
-    <string name="config_screenshotEditor" translatable="false"></string>
+    <string name="config_screenshotEditor" translatable="false">com.google.android.markup/com.google.android.markup.AnnotateActivity</string>
 
     <!-- ComponentName for the file browsing app that the system would expect to be used in work
          profile. The icon for this app will be shown to the user when informing them that a
@@ -500,7 +500,7 @@
 
     <!-- Preferred refresh rate at keyguard, if supported by the display. Overrides
          keyguardMaxRefreshRate. -->
-    <integer name="config_keyguardRefreshRate">-1</integer>
+    <integer name="config_keyguardRefreshRate">120</integer>
 
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
     <integer name="config_keyguardMaxRefreshRate">-1</integer>
@@ -643,7 +643,7 @@
 
     <!-- package name of a built-in camera app to use to restrict implicit intent resolution
          when the double-press power gesture is used. Ignored if empty. -->
-    <string translatable="false" name="config_cameraGesturePackage"></string>
+    <string translatable="false" name="config_cameraGesturePackage">com.google.android.GoogleCamera</string>
 
     <!-- Whether a transition of ACTIVITY_TYPE_DREAM to the home app should play a home sound
          effect -->
