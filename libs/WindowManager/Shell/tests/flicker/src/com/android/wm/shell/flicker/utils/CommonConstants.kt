@@ -21,7 +21,7 @@ package com.android.wm.shell.flicker.utils
 import android.tools.traces.component.ComponentNameMatcher
 
 const val SYSTEM_UI_PACKAGE_NAME = "com.android.systemui"
-const val LAUNCHER_UI_PACKAGE_NAME = "com.google.android.apps.nexuslauncher"
+const val LAUNCHER_UI_PACKAGE_NAME = "com.android.launcher3"
 val APP_PAIR_SPLIT_DIVIDER_COMPONENT = ComponentNameMatcher("", "AppPairSplitDivider#")
 val DOCKED_STACK_DIVIDER_COMPONENT = ComponentNameMatcher("", "DockedStackDivider#")
 val SPLIT_SCREEN_DIVIDER_COMPONENT = ComponentNameMatcher("", "StageCoordinatorSplitDivider#")
