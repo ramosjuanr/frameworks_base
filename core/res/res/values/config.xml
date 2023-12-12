@@ -3280,10 +3280,10 @@
             >com.android.systemui/com.android.systemui.wifi.WifiDebuggingSecondaryUserActivity</string>
 
     <!-- Package name of the system service that implements the shared connectivity service -->
-    <string translatable="false" name="config_sharedConnectivityServicePackage"></string>
+    <string translatable="false" name="config_sharedConnectivityServicePackage">com.google.android.gms</string>
 
     <!-- Intent action used when binding to the shared connectivity service -->
-    <string translatable="false" name="config_sharedConnectivityServiceIntentAction"></string>
+    <string translatable="false" name="config_sharedConnectivityServiceIntentAction">com.google.android.gms.magictether.BIND</string>
 
     <!-- The system and settings UI can support all the features of instant tether. If set to false,
      instant tether will run in notifications mode -->
@@ -4744,7 +4744,7 @@
          disabled.
          Example: "com.android.contentprotection/.ContentProtectionService"
     -->
-    <string name="config_defaultContentProtectionService" translatable="false"></string>
+    <string name="config_defaultContentProtectionService" translatable="false">com.google.android.odad/com.google.android.apps.miphone.odad.contentprotection.ContentProtectionService</string>
 
     <!-- The package name for the system's augmented autofill service.
          This service must be trusted, as it can be activated without explicit consent of the user.
