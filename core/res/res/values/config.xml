@@ -2405,7 +2405,7 @@
     <!-- The name of the package that will hold the device management role -->
     <string name="config_devicePolicyManagement" translatable="false"></string>
     <!-- The name of the package that will hold the app protection service role. -->
-    <string name="config_systemAppProtectionService" translatable="false"></string>
+    <string name="config_systemAppProtectionService" translatable="false">com.google.android.odad</string>
     <!-- The name of the package that will hold the system calendar sync manager role. -->
     <string name="config_systemAutomotiveCalendarSyncManager" translatable="false"></string>
     <!-- The name of the package that will hold the default automotive navigation role. -->
@@ -4579,7 +4579,7 @@
     <string name="config_defaultTrustAgent" translatable="false"></string>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
-    <string name="config_defaultListenerAccessPackages" translatable="false">com.android.launcher3</string>
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.android.launcher3:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.pixel.exo</string>
 
     <!-- Maximum size, specified in pixels, to restrain the display space width to. Height and
          density will be scaled accordingly to maintain aspect ratio. A value of 0 indicates no
@@ -4780,7 +4780,7 @@
          This service must be trusted, as it can be activated without explicit consent of the user.
          Example: "com.android.intelligence/.AppPredictionService"
     -->
-    <string name="config_defaultAppPredictionService" translatable="false"></string>
+    <string name="config_defaultAppPredictionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService</string>
 
     <!-- The package name for the system's content suggestions service.
          Provides suggestions for text and image selection regions in snapshots of apps and should
@@ -4801,7 +4801,7 @@
      disabled.
      Example: "com.android.intelliegence/.SearchUiService"
     -->
-    <string name="config_defaultSearchUiService" translatable="false"></string>
+    <string name="config_defaultSearchUiService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService</string>
 
     <!-- The component name, flattened to a string, for the system's credential manager
       hybrid service. This service allows credential retrieval and storage from, and to
@@ -4852,9 +4852,9 @@
          This service must be trusted, as it can be activated without explicit consent of the user.
          Example: "com.android.speech/.RecognitionService"
     -->
-    <string name="config_defaultOnDeviceSpeechRecognitionService" translatable="false"></string>
+    <string name="config_defaultOnDeviceSpeechRecognitionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService</string>
 
-    <string name="config_defaultMusicRecognitionService" translatable="false"></string>
+    <string name="config_defaultMusicRecognitionService" translatable="false">com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.service.SoundSearchService</string>
 
     <!-- The package name for the system's wallpaper effects generation service.
     This service returns wallpaper effects results.
@@ -4958,9 +4958,9 @@
     <integer translatable="false" name="config_storageManagerDaystoRetainDefault">90</integer>
 
     <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
-    <string name="config_headlineFontFamily" translatable="false"></string>
+    <string name="config_headlineFontFamily" translatable="false">google-sans</string>
     <!-- Allows setting custom fontFeatureSettings on specific text. -->
-    <string name="config_headlineFontFeatureSettings" translatable="false"></string>
+    <string name="config_headlineFontFeatureSettings" translatable="false">ss03</string>
 
     <!-- An array of packages that need to be treated as type system in battery settings -->
     <string-array translatable="false" name="config_batteryPackageTypeSystem">
@@ -5043,20 +5043,20 @@
     <!-- Controls whether system buttons use all caps for text -->
     <bool name="config_buttonTextAllCaps">true</bool>
     <!-- Name of the font family used for system surfaces where the font should use medium weight -->
-    <string name="config_headlineFontFamilyMedium" translateable="false">@string/font_family_button_material</string>
+    <string name="config_headlineFontFamilyMedium" translateable="false">google-sans-medium</string>
     <!-- Name of a font family to use for body text. -->
-    <string name="config_bodyFontFamily" translatable="false">sans-serif</string>
+    <string name="config_bodyFontFamily" translatable="false">google-sans-text</string>
     <!-- Name of a font family to use for medium body text. -->
-    <string name="config_bodyFontFamilyMedium" translatable="false">sans-serif-medium</string>
+    <string name="config_bodyFontFamilyMedium" translatable="false">google-sans-text-medium</string>
 
     <!-- Name of the font family to use in the default lockscreen clock -->
-    <string name="config_clockFontFamily" translatable="false">monospace</string>
+    <string name="config_clockFontFamily" translatable="false">google-sans-clock</string>
 
     <!-- Size of icon shown beside a preference locked by admin -->
     <dimen name="config_restrictedIconSize">@dimen/restricted_icon_size_material</dimen>
 
     <!-- Component name that should be granted Notification Assistant access -->
-    <string name="config_defaultAssistantAccessComponent" translatable="false">android.ext.services/android.ext.services.notification.Assistant</string>
+    <string name="config_defaultAssistantAccessComponent" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService</string>
 
     <bool name="config_keepRestrictedProfilesInBackground">true</bool>
 
@@ -7003,7 +7003,7 @@
     <bool name="config_watchlistUseFileHashesCache">false</bool>
 
     <!-- Name of the package responsible to handle Contextual Search. -->
-    <string name="config_defaultContextualSearchPackageName" translatable="false" />
+    <string name="config_defaultContextualSearchPackageName" translatable="false">com.google.android.googlequicksearchbox</string>
 
     <!-- The key containing the entrypoint for Contextual Search. -->
     <string name="config_defaultContextualSearchKey" translatable="false" />
@@ -7012,5 +7012,5 @@
     <string name="config_defaultContextualSearchEnabled" translatable="false" />
 
     <!-- The key containing the branching boolean for legacy Search. -->
-    <string name="config_defaultContextualSearchLegacyEnabled" translatable="false" />
+    <string name="config_defaultContextualSearchLegacyEnabled" translatable="false">omni.enable_vis</string>
 </resources>
