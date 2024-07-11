@@ -4457,7 +4457,7 @@
     <string name="config_emergency_call_number" translatable="false">112</string>
 
     <!-- Package name that provides Emergency Dialer -->
-    <string name="config_emergency_dialer_package" translatable="false">com.android.phone</string>
+    <string name="config_emergency_dialer_package" translatable="false">com.google.android.apps.safetyhub</string>
 
     <!-- Do not translate. Mcc codes whose existence trigger the presence of emergency
          affordances-->
@@ -4469,7 +4469,7 @@
     <string name="config_deviceProvisioningPackage"></string>
 
     <!-- Colon separated list of package names that should be granted DND access -->
-    <string name="config_defaultDndAccessPackages" translatable="false">com.android.camera2</string>
+    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.android.dialer</string>
 
     <!-- Colon separated list of package names that should be removed from DND access packages -->
     <string name="config_defaultDndDeniedPackages" translatable="false"></string>
@@ -4601,7 +4601,7 @@
          without explicit consent of the user. If no field classification service with the
          specified name exists on the device, field classification will be disabled by default.
     -->
-    <string name="config_defaultFieldClassificationService" translatable="false"></string>
+    <string name="config_defaultFieldClassificationService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AutofillFieldClassificationService</string>
 
     <!-- The package name for the OEM custom system textclassifier service.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -4611,7 +4611,7 @@
 
          See android.view.textclassifier.TextClassificationManager.
     -->
-    <string name="config_defaultTextClassifierPackage" translatable="false"></string>
+    <string name="config_defaultTextClassifierPackage" translatable="false">com.google.android.as</string>
 
 
     <!-- The package name for the system companion device manager service.
@@ -4670,7 +4670,7 @@
         This service must be trusted, as it can be activated without explicit consent of the user.
         See android.service.ambientcontext.AmbientContextDetectionService.
    -->
-    <string name="config_defaultAmbientContextDetectionService" translatable="false"></string>
+    <string name="config_defaultAmbientContextDetectionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAmbientContextDetectionService</string>
 
     <!-- The component names for the system's AmbientContextEvent detection services.
       These services must be trusted, as it can be activated without explicit consent of the user.
@@ -4708,7 +4708,7 @@
     <string translatable="false" name="config_wearableAmbientContextEventArrayExtraKey"></string>
 
     <!-- Component name that accepts ACTION_SEND intents for requesting ambient context consent. -->
-    <string translatable="false" name="config_defaultAmbientContextConsentComponent"></string>
+    <string translatable="false" name="config_defaultAmbientContextConsentComponent">com.google.android.as/com.google.android.apps.miphone.aiai.ambientcontext.ui.ConsentActivity</string>
 
     <!-- Intent extra key for the caller's package name while requesting ambient context consent.
      -->
@@ -4721,7 +4721,7 @@
          This service must be trusted, as the system binds to it and keeps it running.
          Example: "com.android.captions/.SystemCaptionsManagerService"
     -->
-    <string name="config_defaultSystemCaptionsManagerService" translatable="false"></string>
+    <string name="config_defaultSystemCaptionsManagerService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService</string>
 
     <!-- Indicates whether the system wide captions service should also support
          call captioning.
@@ -4741,7 +4741,7 @@
          disabled.
          Example: "com.android.contentcapture/.ContentcaptureService"
     -->
-    <string name="config_defaultContentCaptureService" translatable="false"></string>
+    <string name="config_defaultContentCaptureService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService</string>
 
     <!-- The package name for the system's content protection service.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -4757,7 +4757,7 @@
          disabled.
          Example: "com.android.augmentedautofill/.AugmentedAutofillService"
     -->
-    <string name="config_defaultAugmentedAutofillService" translatable="false"></string>
+    <string name="config_defaultAugmentedAutofillService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService</string>
 
     <!-- The package name list for the system's cloudsearch service.
           This service returns cloudsearch results.
@@ -4774,7 +4774,7 @@
      disabled.
      Example: "com.android.translation/.TranslationService"
 -->
-    <string name="config_defaultTranslationService" translatable="false"></string>
+    <string name="config_defaultTranslationService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiTranslationService</string>
 
     <!-- The package name for the system's app prediction service.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -4791,7 +4791,7 @@
          disabled.
          Example: "com.android.contentsuggestions/.ContentSuggestionsService"
     -->
-    <string name="config_defaultContentSuggestionsService" translatable="false"></string>
+    <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 
     <!-- The package name for the system's search ui service.
      This service returns search results when provided with an input string.
@@ -4846,7 +4846,7 @@
      If no service with the specified name exists on the device, smartspace will be disabled.
      Example: "com.android.intelligence/.SmartspaceService"
 -->
-    <string name="config_defaultSmartspaceService" translatable="false"></string>
+    <string name="config_defaultSmartspaceService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService</string>
 
     <!-- The package name for the system's speech recognition service.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -6166,7 +6166,7 @@
     <!-- Chooser image editing activity.  Must handle ACTION_EDIT image/png intents.
          If omitted, image editing will not be offered via Chooser.
          This name is in the ComponentName flattened format (package/class) [DO NOT TRANSLATE]  -->
-    <string name="config_systemImageEditor" translatable="false"></string>
+    <string name="config_systemImageEditor" translatable="false">com.google.android.markup/com.google.android.markup.AnnotateActivity</string>
 
     <!-- Whether to force WindowOrientationListener to keep listening to its sensor, even when
          dreaming. This allows the AoD to rotate on devices without a wake device_orientation
