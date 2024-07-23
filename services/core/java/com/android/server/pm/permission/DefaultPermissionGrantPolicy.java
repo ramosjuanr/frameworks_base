@@ -938,7 +938,29 @@ final class DefaultPermissionGrantPolicy {
         String commonServiceAction = "android.adservices.AD_SERVICES_COMMON_SERVICE";
         grantPermissionsToSystemPackage(pm, getDefaultSystemHandlerServicePackage(pm,
                         commonServiceAction, userId), userId, NOTIFICATION_PERMISSIONS);
-                        
+
+	// Google Play Store
+        grantPermissionsToSystemPackage(pm, "com.android.vending", userId, CONTACTS_PERMISSIONS,
+                ALWAYS_LOCATION_PERMISSIONS, NEARBY_DEVICES_PERMISSIONS, PHONE_PERMISSIONS, SMS_PERMISSIONS,
+                STORAGE_PERMISSIONS);
+
+	// Data Restore Tool
+        grantSystemFixedPermissionsToSystemPackage(pm, "com.google.android.apps.restore", userId, PHONE_PERMISSIONS,
+                CONTACTS_PERMISSIONS, SMS_PERMISSIONS);
+
+	// Pixel Setup
+        grantSystemFixedPermissionsToSystemPackage(pm, "com.google.android.pixel.setupwizard", userId, PHONE_PERMISSIONS,
+                STORAGE_PERMISSIONS);
+
+	// Android System Intelligence
+        grantPermissionsToSystemPackage(pm, "com.google.android.as", userId, STORAGE_PERMISSIONS,
+                CAMERA_PERMISSIONS, CONTACTS_PERMISSIONS, ALWAYS_LOCATION_PERMISSIONS, MICROPHONE_PERMISSIONS,
+                NEARBY_DEVICES_PERMISSIONS, PHONE_PERMISSIONS, SMS_PERMISSIONS);
+
+	// Google Play Framework
+        grantSystemFixedPermissionsToSystemPackage(pm, "com.google.android.gsf", userId, CONTACTS_PERMISSIONS,
+                PHONE_PERMISSIONS);
+                                                                                                       
         String clockAppPackage = getDefaultSystemHandlerActivityPackage(pm, AlarmClock.ACTION_SET_ALARM, userId);
         grantPermissionsToSystemPackage(pm, clockAppPackage, userId, NOTIFICATION_PERMISSIONS);
     }
